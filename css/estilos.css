@@ -1,0 +1,45 @@
+/*Inicio Estilo Cabecera*/
+#Cabecera{
+  background-color: #5b7989;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 80px;
+}
+#NombreCabecera{
+  display: block;
+  float: left;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+#MenuCabecera{
+  float: right;
+}
+#MenuCabecera ul{
+  list-style: none;
+  margin: 0;
+	padding: 0;
+  padding-right: 20px;
+}
+#MenuCabecera ul li{
+  display: inline-block;
+  line-height: 80px;
+}
+#MenuCabecera ul li a{
+  display: block;
+  color: white;
+  padding: 0 10px;
+  font-size: 1.5em;
+  text-decoration:none;
+}
+#LinkPaisajes{
+  text-decoration: underline;
+}
+#LinkRetratos{
+  text-decoration: underline;
+}
+#MenuCabecera ul li a:hover {
+	background: #0b76a6;
+}
+
+/*Fin Estilo Cabecera*/
