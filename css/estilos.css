@@ -1,45 +1,58 @@
-/*Inicio Estilo Cabecera*/
-#Cabecera{
-  background-color: #5b7989;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  height: 80px;
-}
-#NombreCabecera{
-  display: block;
-  float: left;
-  text-align: left;
-  color: white;
-  text-shadow: 2px 2px 2px #02010a;
-}
-#MenuCabecera{
-  float: right;
-}
-#MenuCabecera ul{
-  list-style: none;
-  margin: 0;
+* {
+	margin: 0;
 	padding: 0;
-  padding-right: 20px;
-}
-#MenuCabecera ul li{
-  display: inline-block;
-  line-height: 80px;
-}
-#MenuCabecera ul li a{
-  display: block;
-  color: white;
-  padding: 0 10px;
-  font-size: 1.5em;
-  text-decoration:none;
-}
-#LinkPaisajes{
-  text-decoration: underline;
-}
-#LinkRetratos{
-  text-decoration: underline;
-}
-#MenuCabecera ul li a:hover {
-	background: #0b76a6;
+	box-sizing: border-box;
 }
 
-/*Fin Estilo Cabecera*/
+.contenedor {
+	width:95%;
+	max-width:1300px;
+	margin:auto;
+
+	display:flex;
+	flex-flow:row wrap;
+}
+
+body {
+	background:#02010a;
+}
+
+header {
+	background:#5b7989;
+	width:100%;
+	padding:20px;
+
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header .NombrePagina a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #02010a;
+  line-height:50px;
+}
+header nav {
+	width:40%;
+
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+header nav a {
+  color: white;
+	text-align: center;
+	text-decoration: none;
+  text-decoration: underline;
+	padding:5px;
+  font-size: 1.2rem;
+
+	flex-grow:1;
+}
+#LinkInicio{
+  text-decoration: none;
+}
