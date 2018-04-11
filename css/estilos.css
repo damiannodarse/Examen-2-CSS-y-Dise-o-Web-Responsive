@@ -21,6 +21,8 @@ header {
 	background:#5b7989;
 	width:100%;
 	padding:20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
 	display: flex;
 	justify-content:space-between;
@@ -37,7 +39,7 @@ header .NombrePagina a {
   line-height:50px;
 }
 header nav {
-	width:40%;
+	width:30%;
 
 	display:flex;
 	flex-wrap:wrap;
@@ -55,4 +57,114 @@ header nav a {
 }
 #LinkInicio{
   text-decoration: none;
+}
+
+.ImgCentral{
+  width: 100%;
+  padding:20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ImgCentral .media {
+ min-width: 20px;
+ margin-top: 5px;
+ background-color:  #82c3a6;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ flex-direction: row;
+ flex-wrap: wrap;
+ }
+
+.ImgCentral .media img {
+ width: 1000px;
+ max-width: 90%;
+ max-height: 400px;
+ margin:5%;
+
+ flex-grow:1;
+ flex-shrink: 1;
+ }
+
+.ImgSec{
+  width: 100%;
+  padding:20px;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.ImgSec .media{
+  width: 50%;
+  margin: 5px;
+  padding: 20px;
+  background-color:  #d5c75f;
+  border: 1px solid;
+
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.ImgSec .media .link { /*Tratando de definir propiedades del link para que la imagen no pierda el formato*/
+  display: flex;
+}
+
+/*.ImgSec .media img{ Formato de imagen que funcionaba antes del link
+  max-width: 90%;
+  max-height: 250px;
+  margin: 5%;
+
+  flex-grow:1;
+  flex-shrink: 1;
+}*/
+
+#imgizq:hover {
+  transform: rotateZ(10deg);
+  -webkit-filter:drop-shadow(10px 10px 10px #82c3a6);
+  filter: drop-shadow(10px 10px 10px #82c3a6);
+  border: 2px solid;
+}
+#imgder:hover{
+  transform: translate(20px,-5px);
+  -webkit-filter:drop-shadow(10px 10px 10px #82c3a6);
+  filter: drop-shadow(10px 10px 10px #82c3a6);
+  border: 2px solid;
+}
+
+@media screen and (max-width: 900px){
+  .contenedor{
+    flex-direction: column;
+  }
+  header{
+    flex-direction: column;
+    padding: 0;
+  }
+  header .NombrePagina {
+    margin:20px 0;
+  }
+  header nav{
+    width: 100%;
+  }
+  .ImgSec{
+    flex-direction: column;
+  }
+  .ImgSec .media{
+    width: 100%;
+  }
 }
