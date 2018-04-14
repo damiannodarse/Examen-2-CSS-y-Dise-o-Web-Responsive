@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Dancing Script', cursive;
+}
+
+body {
+	background:#02010a;
+}
+
+.contenido {
+	max-width:900px;
+	margin:auto;
+
+	display:flex;
+
+	flex-flow:row wrap;
+}
+
+header {
+	background:#5b7989;
+	width:100%;
+	padding:10px;
+	margin-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header .NombrePagina a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #02010a;
+  line-height:50px;
+}
+header nav {
+	width:30%;
+
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+header nav a {
+  color: white;
+	text-align: center;
+	text-decoration: none;
+  text-decoration: underline;
+	padding:5px;
+  font-size: 1.2rem;
+
+	flex-grow:1;
+}
+#LinkPaisajes{
+  text-decoration: none;
+}
+header{
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+		0%{
+			margin-top: 150%;
+		}
+		60&{
+			margin-top: -5%;
+		}
+		100%{
+			margin-top: 0%
+		}
+}
+.galeria{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color:  #d5c75f;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ContImg{
+  width: 33.33%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.imagen{
+    width: 90%;
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: center;
+}
+#img1{
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+#img246{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+#img3{
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
+.ContFoot{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #C6d5c5;
+	width: 100%;
+	padding:10px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.ContFoot .ContSubFoot{
+	width: 25%;
+	margin: 5px;
+
+}
+.Contacto{
+	color: black;
+}
+.Terminos{
+	color: black;
+}
+.ContFoot .ContSubFoot .social a{
+	display: inline-block;
+}
+.Derechos{
+	color: black;
+}
+
+@media screen and (max-width: 900px){
+  .contenido{
+		width: 100%;
+    flex-direction: column;
+  }
+  header{
+    flex-direction: column;
+    padding: 0;
+  }
+  header .NombrePagina {
+    margin:20px 0;
+  }
+	header .NombrePagina a {
+		text-align: center;
+	}
+  header nav{
+    width: 100%;
+  }
+  .galeria{
+  flex-direction: column;
+  }
+  .ContImg{
+    width: 100%;
+  }
+	.ContFoot{
+		flex-direction: column;
+	}
+	.ContFoot .ContSubFoot{
+		width: 100%;
+	}
+	}
